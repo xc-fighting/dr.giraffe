@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/back1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:background="@drawable/b11"
+            android:text="Back"
+            android:textColor="#000000"
+            android:textSize="24dp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="296dp"
+        android:layout_height="258dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/RG"
+            android:layout_width="wrap_content"
+            android:layout_height="297dp"
+            android:checkedButton="@+id/b1"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/bang"
+                android:text="bomb"
+                android:textColor="#000000"
+                android:textSize="23dp" />
+
+            <RadioButton
+                android:id="@+id/speed"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_marginTop="20dp"
+                android:drawableRight="@drawable/cloth1"
+                android:text="armor"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/function"
+                android:layout_width="144dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="20dp"
+                android:drawableRight="@drawable/watch"
+                android:text="clock"
+                android:textColor="#000000"
+                android:textSize="23dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.90" >
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/b11"
+            android:text="答题"
+            android:textColor="#000000"
+            android:textSize="23dp" />
+
+        <Button
+            android:id="@+id/enterthegame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bt1"
+            android:layout_alignBottom="@+id/bt1"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/b11"
+            android:layout_marginRight="58dp"
+            android:text="进入游戏" />
+
+    </RelativeLayout>
+
+</LinearLayout>

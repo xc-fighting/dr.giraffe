@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b222"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editTextchat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/sendtoserver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/b11"
+            android:text="发送至服务器"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/refreshButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="62dp"
+            android:layout_toRightOf="@+id/sendtoserver"
+            android:src="@drawable/refresh" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="聊天记录"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.54" >
+
+        <TextView
+            android:id="@+id/chattext"
+            android:layout_width="295dp"
+            android:layout_height="273dp"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+    </ScrollView>
+
+</LinearLayout>

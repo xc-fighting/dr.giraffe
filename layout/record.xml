@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.73" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="开始录音"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="50dp"
+            android:text="录音时间"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textViewtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView2"
+            android:textColor="#000000"
+            android:layout_below="@+id/textView2" />
+
+        <Button
+            android:id="@+id/endrecord1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imagerecord"
+            android:layout_alignTop="@+id/imagerecord"
+            android:layout_toRightOf="@+id/textViewtime"
+            android:background="@drawable/b11"
+            android:text="结束录音"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/imagerecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="106dp"
+            android:layout_toLeftOf="@+id/textView2"
+             android:background="@drawable/b11"
+            android:src="@drawable/record" />
+
+    </RelativeLayout>
+
+</LinearLayout>

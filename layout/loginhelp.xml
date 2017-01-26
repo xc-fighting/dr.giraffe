@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b222"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.95" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"
+            android:layout_marginTop="57dp"
+            android:text="登陆注册帮助文档" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:text="当你进行第一次运行程序的时候需要先进行注册，输入用户的名称和密码后选中记住我（一定要勾选）。同时选择角色，学生和老师。如果注册成功，这时候候会提示注册成功。登录的时候填完整信息包括用户名和密码，当同时正确时则可以登录进去，反之不行。" />
+
+        <Button
+            android:id="@+id/backtologin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="39dp"
+            android:background="@drawable/b11"
+            android:text="返回登录" />
+
+    </RelativeLayout>
+
+</LinearLayout>

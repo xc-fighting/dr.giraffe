@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b222"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.30" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:text="options"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/scoreboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/teacherword"
+            android:layout_alignRight="@+id/teacherword"
+            android:layout_below="@+id/button5"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/b11"
+            android:text="成绩榜"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/teacherword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_below="@+id/scoreboard"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/b11"
+            android:text="老师评语"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/buttonback1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#000000"
+             android:background="@drawable/b11"
+            android:text="返回上一级" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="19dp"
+            android:background="@drawable/b11"
+            android:text="查看学生答案" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/update"
+            android:layout_alignRight="@+id/scoreboard"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/b11"
+            android:text="设置题目"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+</LinearLayout>

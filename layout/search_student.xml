@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b222"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.39" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:text="教师评语" />
+
+        <ListView
+            android:id="@+id/listView45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1" >
+        </ListView>
+
+        <Button
+            android:id="@+id/button65"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/listView45"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:text="返回上一级" />
+
+    </RelativeLayout>
+
+</LinearLayout>
